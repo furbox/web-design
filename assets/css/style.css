@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f46036;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  background: #171123;
+}
+
+a {
+  color: #f46036;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*Nav*/
+.nav-menu {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-top: 10px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background: #372248;
+}
+
+.nav-menu img {
+  width: 50px;
+  transition: 0.3s;
+}
+
+.nav-menu img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.nav-menu ul {
+  display: flex;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-menu ul li {
+  padding: 10px;
+}
+
+.nav-menu ul li a {
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  border-bottom: 3px solid orangered;
+  transform: scale(1.05, 1.05);
+  background: #171123;
+  padding: 26px;
+}
+
+.nav-menu .nav-right {
+  background: #171123;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-menu .nav-right:hover {
+  background: #f46036;
+  color: #171123;
+  transform: scale(1.05, 1.05);
+}
+
+/*Features*/
+.features {
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  background-color: #372248;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.feature i {
+  padding: 50px;
+  font-size: 50px;
+}
+
+.feature h3,
+.feature p {
+  padding-bottom: 10px;
+  color: #5b85aa;
+}
+
+/*FLEX*/
+.flex{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.card{
+    width: 300px;
+    padding: 10px 0;
+    border: 1px #372248 solid;
+    border-radius: 10px;
+}
+
+.card .card-title{
+    text-align: center;
+    border-bottom: 1px solid #372248;
+    padding: 10px;
+}
+
+.card .card-title h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card .card-body{
+    padding: 10px 0;
+}
+
+.card .card-body img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.card .card-body p{
+    font-size: 19px;
+    padding: 5px;
+    border-top: 1px solid #372248;
+    border-bottom: 1px solid #372248;
+    height: 100px;
+}
+
+.card .card-footer{
+    padding: 5px;
+}
